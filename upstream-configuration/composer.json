@@ -1,26 +1,18 @@
 {
-    "name": "pantheon-upstreams/upstream-configuration",
-    "type": "project",
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://packages.drupal.org/8"
-        }
-    ],
-    "minimum-stability": "alpha",
-    "require": {
-        "drupal/pantheon_decoupled_profile": "^1.0@alpha",
-        "drupal/pantheon_decoupled_umami_demo": "^1.0@alpha"
-    },
-    "extra": {
-        "_README": "To make a custom upstream, clone this repository and add any dependencies to be provided by this upstream to this composer.json file. Leave the root-level composer.json file for the exclusive use of each individual site; do not modify it after your custom upstream has been published. See https://pantheon.io/docs/create-custom-upstream for more information.",
-        "patches": {
-          "drupal/core": {
-            "1356276#675: Allow profiles to define a base/parent profile": "https://www.drupal.org/files/issues/2021-11-18/1356276-675.patch"
-          },
-          "drupal/decoupled_router": {
-            "3111456#34: Unable to resolve path on node in other language than default": "https://www.drupal.org/files/issues/2021-05-05/3111456-34.patch"
-          }
-        }
+  "name": "pantheon-upstreams/upstream-configuration",
+  "type": "project",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
     }
+  ],
+  "minimum-stability": "alpha",
+  "require": {
+    "drupal/pantheon_decoupled_profile": "^1.0@alpha",
+    "drupal/pantheon_decoupled_umami_demo": "^1.0@alpha"
+  },
+  "extra": {
+    "_README": "To make a custom upstream, clone this repository and add any dependencies to be provided by this upstream to this composer.json file. Leave the root-level composer.json file for the exclusive use of each individual site; do not modify it after your custom upstream has been published. See https://pantheon.io/docs/create-custom-upstream for more information."
+  }
 }

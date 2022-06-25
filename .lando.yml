@@ -1,0 +1,4 @@
+name: spa-admin-poc
+recipe: pantheon
+config:
+  framework: drupal9
