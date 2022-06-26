@@ -11,7 +11,10 @@ function App() {
         apiBase: "https://spa-admin-poc.lndo.site",
       });
 
-      const data = await store.getObject({ objectName: "node--article" });
+      const data = await store.getObjectByPath({
+        objectName: "node--article",
+        path: window.location.pathname,
+      });
       setData(data);
     };
 
@@ -20,14 +23,14 @@ function App() {
 
   return (
     <div className="App">
-      {data.map((item) => (
+      {data?.title && (
         <div
-          data-decoupled-contextual={`entity/node:${item.drupal_internal__nid}`}
+          data-decoupled-contextual={`entity/node:${data?.drupal_internal__nid}`}
         >
-          <h2>{item.title}</h2>
-          <div dangerouslySetInnerHTML={{ __html: item.body.processed }} />
+          <h2>{data?.title}</h2>
+          <div dangerouslySetInnerHTML={{ __html: data?.body?.processed }} />
         </div>
-      ))}
+      )}
       <div id="spa-admin"></div>
     </div>
   );
