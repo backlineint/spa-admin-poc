@@ -1,0 +1,22 @@
+uuid: e4acf206-3097-4df1-bcd2-8e00f416a55e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - spa_admin
+_core:
+  default_config_hash: myWzNwd6eJdgWsWTlXk5YyD4QHmAUj9t-4WR8sh8FNk
+id: spa_admin_messages
+theme: spa_admin
+region: header
+weight: -3
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

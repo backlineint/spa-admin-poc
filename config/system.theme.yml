@@ -1,0 +1,4 @@
+_core:
+  default_config_hash: e5N3CRBCnfrOmGhbstALBauq7itI1qU1jTpGjAD7F0g
+admin: gin
+default: spa_admin

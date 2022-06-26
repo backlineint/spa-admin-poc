@@ -1,0 +1,22 @@
+uuid: aa5ea41e-4c5e-4acc-a806-c21a0b9e6fc6
+langcode: en
+status: true
+dependencies:
+  theme:
+    - umami
+_core:
+  default_config_hash: BCWhood0xXFQYqxFgL1spXdb9KeIuXH1YvTdjIEedDg
+id: umami_secondary_local_tasks
+theme: umami
+region: pre_header
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

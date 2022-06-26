@@ -1,0 +1,9 @@
+_core:
+  default_config_hash: EIH63QUk-ZfiUaZ33M1-LQXYXd1Dl5T7XwsmHc08Vik
+embed_url_pattern: /node/.*
+provider: react_local
+skip_routes:
+  - user.login
+  - user.reset.login
+  - user.logout
+theme: spa_admin

@@ -1,0 +1,14 @@
+uuid: ea91670e-e3cd-4439-b44a-3dde87857182
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.pantheon_decoupled
+  module:
+    - user
+id: user_remove_role_action.pantheon_decoupled
+label: 'Remove the Pantheon Decoupled role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: pantheon_decoupled

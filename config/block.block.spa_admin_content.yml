@@ -1,0 +1,22 @@
+uuid: 8a6d7070-14b8-4de2-9e25-43ea9925c8a6
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - spa_admin
+_core:
+  default_config_hash: Bd0xHKT3HDxjuAw80eZL2KVdwvlTKspsIi3kYgt5YR4
+id: spa_admin_content
+theme: spa_admin
+region: content
+weight: -3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }
